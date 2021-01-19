@@ -1,6 +1,6 @@
 -- Data Queries Portion of Assignment
 
--- Select all from each sheet
+-- Select all from each sheet - check data is displaying properly
 SELECT * FROM departments;
 SELECT * FROM dept_emp;
 SELECT * FROM dept_manager;
@@ -9,7 +9,8 @@ SELECT * FROM salaries;
 SELECT * FROM titles;
 
 -- 1. List the following details of each employee: employee number, last name, first name, sex, and salary.
-
+SELECT * FROM employees JOIN salaries ON employees.emp_no = salaries.emp_no;
+-- see image file "question-1-result-pgadmin" for what output looks like
 
 -- 2. List first name, last name, and hire date for employees who were hired in 1986.
 
