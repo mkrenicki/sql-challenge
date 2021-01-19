@@ -14,11 +14,11 @@ SELECT * FROM employees JOIN salaries ON employees.emp_no = salaries.emp_no;
 
 -- 2. List first name, last name, and hire date for employees who were hired in 1986.
  SELECT * FROM employees WHERE hire_date BETWEEN '1986-01-01' AND '1987-01-01';
- -- could not get this command to run. errors out on "Departments" table not found, yet it is in my DB
+-- see image file "question-2-result-pgadmin" for what output looks like
 
 -- 3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
 SELECT * FROM Departments JOIN dept_manager ON Departments.dept_no = dept_manager.dept_no JOIN employees ON dept_manager.emp_no = employees.emp_no;
--- see image file "question-3-result-pgadmin" for what output looks like
+ -- could not get this command to run. errors out on "Departments" table not found, yet it is in my DB
 
 -- 4. List the department of each employee with the following information: employee number, last name, first name, and department name.
 SELECT * FROM employees JOIN dept_emp ON employees.emp_no = dept_emp.emp_no;
