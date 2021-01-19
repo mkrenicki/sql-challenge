@@ -1,7 +1,7 @@
 -- Data Queries Portion of Assignment
 
 -- Select all from each sheet - check data is displaying properly
-SELECT * FROM departments;
+SELECT * FROM Departments;
 SELECT * FROM dept_emp;
 SELECT * FROM dept_manager;
 SELECT * FROM employees;
